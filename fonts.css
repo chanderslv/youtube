@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(Roboto/Roboto-ThinItalic.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(Roboto/Roboto-LightItalic.ttf);
+}

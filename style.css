@@ -1,6 +1,51 @@
+@import url("fonts.css");
+
 body {
+    font-family: Roboto;
+    font-weight: 100;
     background: rgb(243, 163, 105);
 }
+.bg {
+    width: 160px;
+    padding: 15px 21px;
+    background-color: rgb(204, 200, 200);
+}
+.bg div {
+    height: 37px;
+}
 svg {
-    fill: blue;
+    fill: #606060;
+    /* width: 100px; */
+    height: 25px;
+    width: 25px;
+}
+
+.youtube-logo {
+    width: 90px;
+}
+
+/* .to-right {
+    transform: rotate(-90deg);
+    fill: red;
+} */
+
+.italic {
+    font-style: italic;
+    font-weight: 200;
+}
+
+span {
+    text-align: left;
+    margin: 1px;
+    padding: 1px;
+}
+.channel {
+    display: inline-block;
+}
+#blupoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: 0 6px;
 }
