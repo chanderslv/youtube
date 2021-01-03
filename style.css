@@ -1,51 +1,145 @@
 @import url("fonts.css");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 body {
-    font-family: Roboto;
-    font-weight: 100;
-    background: rgb(243, 163, 105);
-}
-.bg {
-    width: 160px;
-    padding: 15px 21px;
-    background-color: rgb(204, 200, 200);
-}
-.bg div {
-    height: 37px;
+  font-family: Roboto;
+  background: #f1f1f1;
 }
 svg {
-    fill: #606060;
-    /* width: 100px; */
-    height: 25px;
-    width: 25px;
+  fill: #606060;
 }
 
-.youtube-logo {
-    width: 90px;
+.side-menu {
+  font-size: 14px;
+  background: rgb(255, 255, 255);
+  height: 100vh;
+  width: 17.1429em;
 }
-
-/* .to-right {
-    transform: rotate(-90deg);
-    fill: red;
-} */
-
-.italic {
-    font-style: italic;
-    font-weight: 200;
-}
-
 span {
-    text-align: left;
-    margin: 1px;
-    padding: 1px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 200;
+  fill: #606060;
 }
-.channel {
-    display: inline-block;
+
+.side-menu a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+  color: #000000;
+  display: block;
+  padding: 0.8571em 0;
+  cursor: pointer;
 }
+.side-menu a:hover {
+  background: rgba(82, 82, 82, 0.123);
+}
+.side-menu a.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+.side-menu a.active span {
+  font-weight: bold;
+}
+span.active {
+  font-weight: bold;
+}
+
+.side-menu a.active:hover {
+  background: rgba(0, 0, 0, 0.171);
+}
+
+
+.side-menu a.active svg {
+  fill: #f00;
+}
+
+.side-menu a .icon {
+  margin-left: 1.8571em;
+  display: inline-block;
+  width: 1.4286em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.side-menu a .text {
+  display: inline-block;
+  margin-left: 1.8571em;
+  vertical-align: middle;
+}
+
+hr {
+  margin: 0.8571em 0;
+}
+
+.top-menu {
+  background: #fff;
+  margin-bottom: 3.5714em;
+  display: flex;
+  justify-content: space-between;
+}
+.top-menu a svg {
+  fill: #606060;
+}
+.top-menu a {
+  text-decoration: none;
+}
+.fire {
+  width: 1em;
+}
+.home {
+  width: 1.4286em;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-menu {
+    font-size: 11px;
+  }
+}
+
 #blupoint {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: blue;
-    margin: 0 6px;
+  float: right;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: blue;
+  margin: 14px 0px;
+}
+input {
+  border: 1px solid grey;
+  border-radius: 3px 0px 0px 3px;
+  width: 574px;
+  height: 30px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 10px;
+}
+input:focus {
+  border: 1px solid rgba(50, 71, 190, 0.726);
+}
+.search-button {
+  width: 63px;
+  height: 34px;
+  border: 1px solid grey;
+  border-radius: 0px 3px 3px 0px;
+  padding: 0px 0px 1px 0px;
+  margin-left: -4px;
+  outline: none;
+  border-left: none;
+}
+
+.search-button:hover {
+  background-color: rgba(0, 0, 0, 0.178);
+}
+.search-button:hover svg {
+  fill: black;
+}
+.top-menu nav a {
+  margin: 0px 0px 0px 17px;
+  vertical-align: middle;
+}
+.top-menu nav .red-point {
+  margin-left: -10px;
+  vertical-align: top;
 }
