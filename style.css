@@ -4,8 +4,48 @@ body {
   font-family: Roboto;
   background: #f1f1f1;
 }
+header {
+  position: fixed;
+  background: #ffffff;
+  width: 100%;
+  height: 56px;
+  padding: 16px 12px 0px 0px;
+  top: 0;
+  right: 0;
+  padding-left: 0px;
+}
+
 svg {
   fill: #606060;
+}
+.top-menu {
+  margin-bottom: 3.5714em;
+  display: flex;
+  justify-content: space-between;
+}
+.top-menu a svg {
+  fill: #606060;
+}
+.top-menu a {
+  text-decoration: none;
+}
+.top-menu nav a {
+  margin: 0px 0px 0px 17px;
+  vertical-align: middle;
+}
+.top-menu nav .red-point {
+  margin-left: -10px;
+  vertical-align: top;
+}
+.dropdown {
+  margin-left: 50px;
+  margin-right: 35px;
+}
+.fire {
+  width: 1em;
+}
+.home {
+  width: 1.4286em;
 }
 
 .side-menu {
@@ -13,7 +53,13 @@ svg {
   background: rgb(255, 255, 255);
   height: 100vh;
   width: 17.1429em;
+  margin-top: 72px;
 }
+.side-menu.active {
+  width: 5em;
+}
+
+
 span {
   text-decoration: none;
   font-family: Roboto;
@@ -33,6 +79,7 @@ span {
   padding: 0.8571em 0;
   cursor: pointer;
 }
+
 .side-menu a:hover {
   background: rgba(82, 82, 82, 0.123);
 }
@@ -68,29 +115,15 @@ span.active {
   margin-left: 1.8571em;
   vertical-align: middle;
 }
+.side-menu.active .text {
+  display: none;
+}
 
 hr {
   margin: 0.8571em 0;
 }
 
-.top-menu {
-  background: #fff;
-  margin-bottom: 3.5714em;
-  display: flex;
-  justify-content: space-between;
-}
-.top-menu a svg {
-  fill: #606060;
-}
-.top-menu a {
-  text-decoration: none;
-}
-.fire {
-  width: 1em;
-}
-.home {
-  width: 1.4286em;
-}
+
 
 @media only screen and (max-width: 600px) {
   .side-menu {
@@ -134,12 +167,4 @@ input:focus {
 }
 .search-button:hover svg {
   fill: black;
-}
-.top-menu nav a {
-  margin: 0px 0px 0px 17px;
-  vertical-align: middle;
-}
-.top-menu nav .red-point {
-  margin-left: -10px;
-  vertical-align: top;
 }
